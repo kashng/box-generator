@@ -1,0 +1,10 @@
+
+<div style="text-align:center">
+  <button class="btn" (click)="createBox()" style="z-index: 1;"> Create Box </button>
+  <button class="btn" (click)="destroyControls()" style="z-index: 1;"> Keyboard Toggle </button>
+</div>
+
+<app-box-factory #boxRefId *ngFor="let boxFactory of boxFactoryArray let i=index" [zIndex]="i"
+  [attr.id]="i + 1" (click)="setControls(i + 1)"></app-box-factory>
+
+<router-outlet></router-outlet>

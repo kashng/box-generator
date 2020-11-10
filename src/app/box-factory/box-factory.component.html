@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="block">
+    <div class="box">
+      <div class="shape" [ngStyle]="{'height': shapeDynamicHeight + 'px'}">
+        <div class="side tooltipSide" #tooltip [ngStyle]="side1DynamicTransform()"></div>
+        <div class="side" [ngStyle]="side2DynamicTransform()"></div>
+        <div class="side" [ngStyle]="side3DynamicTransform()"></div>
+        <div class="side" [ngStyle]="side4DynamicTransform()"></div>
+      </div>
+    </div>
+  </div>
+</div>
